@@ -16,7 +16,7 @@ export function ArAgingCard() {
           <span className="text-[14px] text-txt-secondary tabular-nums">Total: {formatCurrency(total)}</span>
         </div>
       </CardHeader>
-      <CardContent className="flex flex-col gap-3">
+      <CardContent className="flex flex-col gap-4">
         <div className="h-[140px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={arAging} layout="vertical">

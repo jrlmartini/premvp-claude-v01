@@ -11,7 +11,7 @@ interface KpiPillProps {
 
 function KpiPill({ icon, label, value, change }: KpiPillProps) {
   return (
-    <div className="flex items-center gap-3 px-4 py-3 rounded-[12px] bg-bg-card border border-str-default">
+    <div className="flex items-center gap-4 px-4 py-4 rounded-[12px] bg-bg-card border border-str-default">
       <div className="text-chart-1">{icon}</div>
       <div>
         <p className="text-[12px] text-txt-muted leading-none mb-0.5">{label}</p>
@@ -33,7 +33,7 @@ export function KpiSummaryBar() {
   const opCfYtdVsGoal = ((operationalCashflow.ytd.generation / operationalCashflow.ytd.goal) - 1) * 100
 
   return (
-    <div className="grid grid-cols-4 gap-4 px-6 py-4">
+    <div className="grid grid-cols-4 gap-4 px-6 py-4 mb-2">
       <KpiPill
         icon={<DollarSign size={20} />}
         label="Receita YTD"

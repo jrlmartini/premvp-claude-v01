@@ -10,7 +10,7 @@ export function CashPositionCard() {
       <CardHeader>
         <CardTitle>Posição de caixa</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-3">
+      <CardContent className="flex flex-col gap-4">
         <div>
           <p className="text-[30px] font-bold tabular-nums text-txt-main">{formatCurrency(cashPosition.current)}</p>
           <span className="inline-flex items-center gap-1 text-[14px] font-semibold text-st-success">
