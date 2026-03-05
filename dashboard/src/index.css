@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+@theme {
+  /* Core UI tokens */
+  --color-bg-main: #03131e;
+  --color-bg-card: #071724;
+  --color-bg-modal: #214058;
+  --color-bg-button: #275fc1;
+  --color-bg-destructive: #e45757;
+
+  --color-str-default: #214059;
+  --color-str-hover: #275fc1;
+  --color-str-disabled: #8f9da7;
+  --color-str-destructive: #d32f2f;
+
+  --color-txt-main: #f2f2f2;
+  --color-txt-secondary: #c1cdd9;
+  --color-txt-muted: #8f9da7;
+  --color-txt-modal: #03131e;
+
+  /* Chart palette */
+  --color-chart-1: #275fc1;
+  --color-chart-2: #19c2b8;
+  --color-chart-3: #2aa9e0;
+  --color-chart-4: #22A87e;
+  --color-chart-5: #7ad74a;
+  --color-chart-6: #f2c14e;
+  --color-chart-7: #e45757;
+  --color-chart-other: #B6c2D1;
+
+  /* Extended chart */
+  --color-chart-9: #d95ad0;
+  --color-chart-10: #8a5cf6;
+  --color-chart-11: #6b7dff;
+  --color-chart-12: #b71c71;
+
+  /* Status colors */
+  --color-st-success: #34d399;
+  --color-st-warning: #fbbf24;
+  --color-st-danger: #fb7185;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-txt-main);
+  background-color: var(--color-bg-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tabular nums for all numeric contexts */
+.tabular-nums {
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-str-default);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-str-hover);
+}
