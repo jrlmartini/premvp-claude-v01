@@ -125,16 +125,16 @@ export const rfmData = [
 
 // RFM segment summary for the heatmap
 export const rfmSegments = [
-  { segment: 'Campeões', count: 8, revenue: 2_800_000, color: '#34d399' },
-  { segment: 'Clientes leais', count: 22, revenue: 4_200_000, color: '#22A87e' },
-  { segment: 'Potenciais leais', count: 20, revenue: 2_100_000, color: '#2aa9e0' },
-  { segment: 'Novos valiosos', count: 3, revenue: 450_000, color: '#275fc1' },
-  { segment: 'Novos promissores', count: 8, revenue: 380_000, color: '#7ad74a' },
-  { segment: 'Novos recentes', count: 12, revenue: 240_000, color: '#19c2b8' },
-  { segment: 'Precisam de atenção', count: 31, revenue: 1_900_000, color: '#f2c14e' },
-  { segment: 'Em risco', count: 49, revenue: 1_650_000, color: '#e45757' },
-  { segment: 'Hibernando', count: 52, revenue: 780_000, color: '#B6c2D1' },
-  { segment: 'Perdidos', count: 48, revenue: 320_000, color: '#8f9da7' },
+  { segment: 'Campeões', count: 8, revenue: 2_800_000, color: 'var(--color-st-success)' },
+  { segment: 'Clientes leais', count: 22, revenue: 4_200_000, color: 'var(--color-chart-4)' },
+  { segment: 'Potenciais leais', count: 20, revenue: 2_100_000, color: 'var(--color-chart-3)' },
+  { segment: 'Novos valiosos', count: 3, revenue: 450_000, color: 'var(--color-chart-1)' },
+  { segment: 'Novos promissores', count: 8, revenue: 380_000, color: 'var(--color-chart-5)' },
+  { segment: 'Novos recentes', count: 12, revenue: 240_000, color: 'var(--color-chart-2)' },
+  { segment: 'Precisam de atenção', count: 31, revenue: 1_900_000, color: 'var(--color-chart-6)' },
+  { segment: 'Em risco', count: 49, revenue: 1_650_000, color: 'var(--color-chart-7)' },
+  { segment: 'Hibernando', count: 52, revenue: 780_000, color: 'var(--color-chart-other)' },
+  { segment: 'Perdidos', count: 48, revenue: 320_000, color: 'var(--color-txt-muted)' },
 ]
 
 // Accounts receivable aging

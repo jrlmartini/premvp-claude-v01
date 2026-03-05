@@ -19,5 +19,14 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: "Literal[value=/#[0-9A-Fa-f]{3,8}/]",
+          message: 'Use design tokens (CSS variables or Tailwind token classes) instead of raw hex colors.',
+        },
+      ],
+    },
   },
 ])
