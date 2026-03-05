@@ -16,7 +16,7 @@ export function ContractPipelineCard() {
           <span className="text-[14px] text-txt-secondary tabular-nums">{formatCurrency(totalValue)}</span>
         </div>
       </CardHeader>
-      <CardContent className="flex flex-col gap-3">
+      <CardContent className="flex flex-col gap-4">
         {contractPipeline.map((stage, i) => {
           const widthPct = (stage.value / maxValue) * 100
           return (
